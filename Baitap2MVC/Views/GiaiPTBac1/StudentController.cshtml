@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "StudentController";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>StudentController</h2>
+@using (Html.BeginForm())
+{
+<input type="text" name="Ten" />
+<input type="text" name="Tuoi" />
+<input type="text" name="Lop" />
+<input type="submit" value="Nhap thong tin" />
+}
+<h3>
+    Thong tin sinh viên: Tên:@ViewBag.Ten; Tuổi: @ViewBag.Tuoi; Lớp: @ViewBag.Lop;
+</h3>
