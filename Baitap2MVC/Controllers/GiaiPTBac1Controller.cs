@@ -19,13 +19,16 @@ namespace Baitap2MVC.Controllers
         {
             return View();
         }
-
         [HttpPost]
-        public ActionResult GiaiPTBac1(double hesoa, double hesob)
+        public ActionResult Index(string hesoa, string hesob)
         {
-            double x = gpt.GiaiPTBacMot(hesoa, hesob);
+            double a = double.Parse(hesoa);
+            double b = double.Parse(hesob);
+            double x = gpt.GiaiPTBacMot(a, b);
             ViewBag.nghiemPT = x;
             return View();
+ 
         }
+
     }
 }
