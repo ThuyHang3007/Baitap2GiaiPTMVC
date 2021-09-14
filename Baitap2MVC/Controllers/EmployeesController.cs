@@ -27,7 +27,7 @@ namespace Baitap2MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Employee employee = db.People.Find(id);
+            Employee employee = db.Employees.Find(id);
             if (employee == null)
             {
                 return HttpNotFound();
@@ -65,7 +65,7 @@ namespace Baitap2MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Employee employee = db.People.Find(id);
+            Employee employee = db.Employees.Find(id);
             if (employee == null)
             {
                 return HttpNotFound();
@@ -96,7 +96,7 @@ namespace Baitap2MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Employee employee = db.People.Find(id);
+            Employee employee = db.Employees.Find(id);
             if (employee == null)
             {
                 return HttpNotFound();
@@ -109,7 +109,7 @@ namespace Baitap2MVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
         {
-            Employee employee = db.People.Find(id);
+            Employee employee = db.Employees.Find(id);
             db.People.Remove(employee);
             db.SaveChanges();
             return RedirectToAction("Index");
