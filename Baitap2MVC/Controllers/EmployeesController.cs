@@ -17,7 +17,7 @@ namespace Baitap2MVC.Controllers
         // GET: Employees
         public ActionResult Index()
         {
-            return View(db.People.ToList());
+            return View(db.Employees.ToList());
         }
 
         // GET: Employees/Details/5
