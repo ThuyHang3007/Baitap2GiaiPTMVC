@@ -13,7 +13,7 @@ namespace Baitap2MVC.Controllers
     public class StudentsController : Controller
     {
         private LTQLDbContext db = new LTQLDbContext();
-
+        AutoGenerateKey aukey = new AutoGenerateKey();
         // GET: Students
         public ActionResult Index()
         {
@@ -38,6 +38,7 @@ namespace Baitap2MVC.Controllers
         // GET: Students/Create
         public ActionResult Create()
         {
+
             return View();
         }
 

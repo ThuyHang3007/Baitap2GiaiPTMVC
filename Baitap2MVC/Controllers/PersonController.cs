@@ -13,7 +13,7 @@ namespace Baitap2MVC.Controllers
     public class PersonController : Controller
     {
         private LTQLDbContext db = new LTQLDbContext();
-
+        
         // GET: Person
         public ActionResult Index()
         {
